@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big designer</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="Ativo 2@3zz.png" type="image/x-icon" class="iconn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Permanent+Marker&family=Russo+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+
+        <a href="#" class="logo">
+            <img src="./logo text big designeer.png" alt="logo" height="28" width="180">
+        </a>
+        <ul class="menu">
+
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contactos" class="menu-link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="Logo app de roupas.jpg" alt="foto de Licon Abrão" class="foto-perfil">
+        <h3>Licon Abrão Nhatave</h3>
+        <p class="cabecalho-sub-titulo">Master Designer</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre <span>Min</span></h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Sou <span>Licon Abrão Nhatave</span>, um designer focado em unir estética e
+                tecnologia para criar soluções visuais de alto impacto. Com domínio da Adobe Creative Cloud e
+                conhecimento intermediário em Figma, transito entre o design impresso e o digital com fluidez.
+                Especialista em modelagem 3D com Blender, busco constantemente automatizar processos através de Python
+                para elevar a eficiência criativa. Além disso, possuo domínio do Pacote Office, garantindo uma gestão de
+                projetos organizada e profissional. Meu objetivo é transformar ideias complexas em experiências visuais
+                memoráveis e funcionais.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <link rel="stylesheet" href="print.css" media="print">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./App.svg" alt="projeto-1" class="projeto-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">App Fashion</h3>
+                    <p class="paragrafo">Design de interface (UI/UX) para um aplicativo de e-commerce de moda. Foco em
+                        criar uma jornada de compra intuitiva, com estética moderna e navegação fluida para maximizar a
+                        conversão.
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./5972420_21752 [Convertido].jpg" alt="projeto-2" class="projeto-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Identidade Visual</h3>
+                    <p class="paragrafo">Desenvolvimento completo de branding para uma marca de café artesanal. O
+                        projeto abrange desde a criação do logotipo até à aplicação em embalagens, uniformes e material
+                        corporativo.
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./book.svg" alt="projeto-3" class="projeto-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Book</h3>
+                    <p class="paragrafo">Layout e diagramação de material institucional. O desafio foi harmonizar
+                        fotografia industrial com textos técnicos, criando uma hierarquia visual clara e dinâmica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactos" class="contactos">
+        <h2 class="contactos-titulo">Entre em contacto</h2>
+
+        <form class="formalario-contactos" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="Nome" type="text">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="degite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="button-formulario">Enviar Whatsapp</button>
+        </form>
+
+    </section>
+    <script>
+
+        function enviarwhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome');
+            const mensagem = document.getElementById('mensagem');
+            const telefone = '258869841457';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgformatada = encodeURIComponent(texto);
+
+            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgformatada}`;
+
+            window.open(url, '_blank');
+
+        }
+    </script>
+
+</body>
+
+</html>
