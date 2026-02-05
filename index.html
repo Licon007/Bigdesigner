@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="De">
 
 <head>
     <meta charset="UTF-8">
@@ -29,16 +29,16 @@
         <ul class="menu">
 
             <li>
-                <a href="#inicio" class="menu-link">Início</a>
+                <a href="#inicio" class="menu-link">Start</a>
             </li>
             <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
+                <a href="#sobre" class="menu-link">Über</a>
             </li>
             <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
+                <a href="#projetos" class="menu-link">Projekte</a>
             </li>
             <li>
-                <a href="#contactos" class="menu-link">Contacto</a>
+                <a href="#contactos" class="menu-link">Kontakt</a>
             </li>
         </ul>
     </nav>
@@ -51,48 +51,52 @@
     </main>
 
     <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre <span>Min</span></h2>
+        <h2 class="sobre-titulo">Über <span>mich</span></h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Sou <span>Licon Abrão Nhatave</span>, um designer focado em unir estética e
-                tecnologia para criar soluções visuais de alto impacto. Com domínio da Adobe Creative Cloud e
-                conhecimento intermediário em Figma, transito entre o design impresso e o digital com fluidez.
-                Especialista em modelagem 3D com Blender, busco constantemente automatizar processos através de Python
-                para elevar a eficiência criativa. Além disso, possuo domínio do Pacote Office, garantindo uma gestão de
-                projetos organizada e profissional. Meu objetivo é transformar ideias complexas em experiências visuais
-                memoráveis e funcionais.</p>
+            <p class="sobre-paragrafo">Ich bin <span>Licon Abrão Nhatave</span>, ein angehender Mediengestalter mit
+                großem Interesse an
+                digitalem und gedrucktem Design.
+                Ich arbeite mit der Adobe Creative Cloud und habe Erfahrung in der Gestaltung von
+                Layouts, Grafiken und visuellen Inhalten für verschiedene Medien.
+                Neben Print- und Digitaldesign verfüge ich über Kenntnisse in Figma sowie
+                Grundkenntnisse in der 3D-Modellierung mit Blender.
+                Ich interessiere mich für moderne Designprozesse und die effiziente Umsetzung
+                kreativer Ideen.
+                Mein Ziel ist es, meine Fähigkeiten im Rahmen einer Ausbildung weiterzuentwickeln
+                und praktische Erfahrung in einem professionellen Umfeld zu sammeln.
+            </p>
         </div>
     </section>
 
     <section id="projetos" class="projetos">
         <link rel="stylesheet" href="print.css" media="print">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <h2 class="projetos-titulo">Meine Projekte</h2>
         <div class="projetos-caixa">
             <div class="projetos-card">
                 <img src="andere/App.svg" alt="projeto-1" class="projeto-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">App Fashion</h3>
-                    <p class="paragrafo">Design de interface (UI/UX) para um aplicativo de e-commerce de moda. Foco em
-                        criar uma jornada de compra intuitiva, com estética moderna e navegação fluida para maximizar a
-                        conversão.
+                    <h3 class="info-projetos">Kleidung und Accessoire-App</h3>
+                    <p class="paragrafo">Interface-Design (UI/UX) für eine Mode-E-Commerce-App.
+                        Fokus auf die Gestaltung einer intuitiven Customer Journey mit moderner Ästhetik
+                        und flüssiger Navigation zur Maximierung der Conversion.
                     </p>
                 </div>
             </div>
             <div class="projetos-card">
                 <img src="andere/5972420_21752 [Convertido].jpg" alt="projeto-2" class="projeto-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Identidade Visual</h3>
-                    <p class="paragrafo">Desenvolvimento completo de branding para uma marca de café artesanal. O
-                        projeto abrange desde a criação do logotipo até à aplicação em embalagens, uniformes e material
-                        corporativo.
+                    <h3 class="info-projetos">Visuelle Identität</h3>
+                    <p class="paragrafo">Komplette Markenentwicklung für eine handwerkliche Kaffeemarke. Das Projekt umfasst die Erstellung des Logos sowie die Anwendung auf Verpackungen, Arbeitskleidung und Geschäftsausstattung.
                     </p>
                 </div>
             </div>
             <div class="projetos-card">
                 <img src="andere/book.svg" alt="projeto-3" class="projeto-imagem">
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Book</h3>
-                    <p class="paragrafo">Layout e diagramação de material institucional. O desafio foi harmonizar
-                        fotografia industrial com textos técnicos, criando uma hierarquia visual clara e dinâmica.
+                    <h3 class="info-projetos">Präsentationsbuch</h3>
+                    <p class="paragrafo">Bei der Gestaltung des institutionellen Materials bestand die Herausforderung
+                        darin, die Industriefotografie mit technischen Texten zu verbinden und dabei eine klare und
+                        zugleich lebendige visuelle Hierarchie zu schaffen.
                     </p>
                 </div>
             </div>
@@ -100,16 +104,16 @@
     </section>
 
     <section id="contactos" class="contactos">
-        <h2 class="contactos-titulo">Entre em contacto</h2>
+        <h2 class="contactos-titulo">Kontakt aufnehmen</h2>
 
         <form class="formalario-contactos" id="formulario" onsubmit="enviarwhats(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="Nome" type="text">
+                <input placeholder="name" class="campo-form" id="nome" type="text">
             </div>
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="degite sua mensagem" rows="6" id="mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Nachricht eingeben" rows="6" id="mensagem"></textarea>
             </div>
-            <button type="submit" class="button-formulario">Enviar Whatsapp</button>
+            <button type="submit" class="button-formulario">Per WhatsApp kontaktieren</button>
         </form>
 
     </section>
@@ -118,8 +122,8 @@
         function enviarwhats(event) {
             event.preventDefault()
 
-            const nome = document.getElementById('nome');
-            const mensagem = document.getElementById('mensagem');
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
             const telefone = '258869841457';
 
             const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
