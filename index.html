@@ -118,8 +118,8 @@
         function enviarwhats(event) {
             event.preventDefault()
 
-            const nome = document.getElementById('nome');
-            const mensagem = document.getElementById('mensagem');
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
             const telefone = '258869841457';
 
             const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
